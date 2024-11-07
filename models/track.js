@@ -8,6 +8,10 @@ const trackSchema = mongoose.Schema(
     title: { type: String, required: true },
     album: { type: String, required: true },
     artist: { type: String, required: true },
+    /* Might add later */
+    release_year: { type: Number, required: false },
+    genre: { type: String, required: false },
+    cover_art_url: { type: String, required: false },
   },
   { timestamps: true }
 )
